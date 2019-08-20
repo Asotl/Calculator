@@ -30,23 +30,27 @@ namespace WindowsFormsApplication4
         {
             InitializeComponent();
         }
-
-        private void One_Click(object sender, EventArgs e)
+        public void Operation(bool plusFlag, int number)
         {
-            if  (Result == 0)
+            if (Result == 0)
             {
-                
+
                 // Работа с чслом и сложение
                 result.Text += One.ToString();
                 Result = One;
             }
-            if (PlusFlag)
+            if (plusFlag)
             {
-                Result += One;
-                result.Text += One.ToString();
+                Result += number;
+                result.Text += number.ToString();
             }
+        }
 
-       
+
+        private void One_Click(object sender, EventArgs e)
+        {
+            
+            Operation(PlusFlag, One);
         }
 
         private void Plus_Click(object sender, EventArgs e)
@@ -61,6 +65,74 @@ namespace WindowsFormsApplication4
         {
             result.Clear();
             result.Text = Result.ToString();
+
+        }
+
+        private void Two_B_Click(object sender, EventArgs e)
+        {
+            Operation(PlusFlag, Two);
+        }
+
+        private void Three_B_Click(object sender, EventArgs e)
+        {
+            Operation(PlusFlag, Three);
+
+        }
+
+        private void Four_B_Click(object sender, EventArgs e)
+        {
+            Operation(PlusFlag, Four);
+
+        }
+
+        private void Five_B_Click(object sender, EventArgs e)
+        {
+            Operation(PlusFlag, Five);
+
+        }
+
+        private void Six_B_Click(object sender, EventArgs e)
+        {
+            Operation(PlusFlag, Six);
+
+        }
+
+        private void Seven_B_Click(object sender, EventArgs e)
+        {
+            Operation(PlusFlag, Seven);
+
+        }
+
+        private void Eight_B_Click(object sender, EventArgs e)
+        {
+            Operation(PlusFlag, Eight);
+
+        }
+
+        private void Nine_B_Click(object sender, EventArgs e)
+        {
+            Operation(PlusFlag, Nine);
+
+        }
+
+        private void Zero_B_Click(object sender, EventArgs e)
+        {
+            Operation(PlusFlag, Zero);
+
+        }
+
+        private void MinusButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MultiplicationButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DivisionButton_Click(object sender, EventArgs e)
+        {
 
         }
     }
