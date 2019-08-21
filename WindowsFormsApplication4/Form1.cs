@@ -12,6 +12,7 @@ namespace WindowsFormsApplication4
 {
     public partial class Form1 : Form
     {
+        public bool MinusFlag = false;
         public bool PlusFlag = false;
         public int Result = 0;
         public string Interface;
@@ -30,6 +31,7 @@ namespace WindowsFormsApplication4
         {
             InitializeComponent();
         }
+        List<string> OperationsList = new List<string>();
         public void Operation(bool plusFlag, int number)
         {
             if (Result == 0)
@@ -56,8 +58,8 @@ namespace WindowsFormsApplication4
         private void Plus_Click(object sender, EventArgs e)
         {
 
-            result.Text += " + ";
-            PlusFlag = true;
+            result.Text += " - ";
+            OperationsList.Add("minus");
 
         }
 
@@ -65,6 +67,11 @@ namespace WindowsFormsApplication4
         {
             result.Clear();
             result.Text = Result.ToString();
+            foreach (String oper in OperationsList)
+            {
+
+            }
+            
 
         }
 
@@ -123,6 +130,8 @@ namespace WindowsFormsApplication4
 
         private void MinusButton_Click(object sender, EventArgs e)
         {
+            result.Text += " - ";
+            OperationsList.Add("minus");
 
         }
 
