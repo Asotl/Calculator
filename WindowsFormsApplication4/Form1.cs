@@ -14,6 +14,7 @@ namespace WindowsFormsApplication4
     {
         public bool MinusFlag = false;
         public bool PlusFlag = false;
+        public bool equally = false;
         public int Result = 0;
         public string Interface;
         const int One = 1;
@@ -41,24 +42,26 @@ namespace WindowsFormsApplication4
                 result.Text += One.ToString();
                 Result = One;
             }
+            //else
+            //{
+            //    result.Clear();
+            //}
             if (plusFlag)
             {
                 Result += number;
                 result.Text += number.ToString();
+                
             }
-        }
-
-
-        private void One_Click(object sender, EventArgs e)
-        {
             
-            Operation(PlusFlag, One);
         }
+
+
+        
 
         private void Plus_Click(object sender, EventArgs e)
         {
 
-            result.Text += " - ";
+            result.Text += " + ";
             OperationsList.Add("minus");
 
         }
@@ -71,30 +74,41 @@ namespace WindowsFormsApplication4
             {
 
             }
+            PlusFlag = false;
             
+
+        }
+        private void One_Click(object sender, EventArgs e)
+        {
+            result.Text = result.Text + "1";
+
 
         }
 
         private void Two_B_Click(object sender, EventArgs e)
         {
-            Operation(PlusFlag, Two);
+            result.Text = result.Text + "2";
+
         }
 
         private void Three_B_Click(object sender, EventArgs e)
         {
-            Operation(PlusFlag, Three);
+            result.Text = result.Text + "3";
+
 
         }
 
         private void Four_B_Click(object sender, EventArgs e)
         {
-            Operation(PlusFlag, Four);
+            result.Text = result.Text + "4";
+
 
         }
 
         private void Five_B_Click(object sender, EventArgs e)
         {
-            Operation(PlusFlag, Five);
+            result.Text = result.Text + "5";
+
 
         }
 

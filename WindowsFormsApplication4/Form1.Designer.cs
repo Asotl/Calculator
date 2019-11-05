@@ -44,6 +44,7 @@
             this.MinusButton = new System.Windows.Forms.Button();
             this.MultiplicationButton = new System.Windows.Forms.Button();
             this.DivisionButton = new System.Windows.Forms.Button();
+            this.button_dot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // result
@@ -110,7 +111,7 @@
             this.Four_B.Name = "Four_B";
             this.Four_B.Size = new System.Drawing.Size(75, 23);
             this.Four_B.TabIndex = 6;
-            this.Four_B.Text = "button1";
+            this.Four_B.Text = "4";
             this.Four_B.UseVisualStyleBackColor = true;
             this.Four_B.Click += new System.EventHandler(this.Four_B_Click);
             // 
@@ -120,7 +121,7 @@
             this.Five_B.Name = "Five_B";
             this.Five_B.Size = new System.Drawing.Size(75, 23);
             this.Five_B.TabIndex = 7;
-            this.Five_B.Text = "button2";
+            this.Five_B.Text = "5";
             this.Five_B.UseVisualStyleBackColor = true;
             this.Five_B.Click += new System.EventHandler(this.Five_B_Click);
             // 
@@ -130,7 +131,7 @@
             this.Six_B.Name = "Six_B";
             this.Six_B.Size = new System.Drawing.Size(75, 23);
             this.Six_B.TabIndex = 8;
-            this.Six_B.Text = "button3";
+            this.Six_B.Text = "6";
             this.Six_B.UseVisualStyleBackColor = true;
             this.Six_B.Click += new System.EventHandler(this.Six_B_Click);
             // 
@@ -140,7 +141,7 @@
             this.Seven_B.Name = "Seven_B";
             this.Seven_B.Size = new System.Drawing.Size(75, 23);
             this.Seven_B.TabIndex = 9;
-            this.Seven_B.Text = "button4";
+            this.Seven_B.Text = "7";
             this.Seven_B.UseVisualStyleBackColor = true;
             this.Seven_B.Click += new System.EventHandler(this.Seven_B_Click);
             // 
@@ -150,7 +151,7 @@
             this.Eight_B.Name = "Eight_B";
             this.Eight_B.Size = new System.Drawing.Size(75, 23);
             this.Eight_B.TabIndex = 10;
-            this.Eight_B.Text = "button5";
+            this.Eight_B.Text = "8";
             this.Eight_B.UseVisualStyleBackColor = true;
             this.Eight_B.Click += new System.EventHandler(this.Eight_B_Click);
             // 
@@ -160,17 +161,17 @@
             this.Nine_B.Name = "Nine_B";
             this.Nine_B.Size = new System.Drawing.Size(75, 23);
             this.Nine_B.TabIndex = 11;
-            this.Nine_B.Text = "button6";
+            this.Nine_B.Text = "9";
             this.Nine_B.UseVisualStyleBackColor = true;
             this.Nine_B.Click += new System.EventHandler(this.Nine_B_Click);
             // 
             // Zero_B
             // 
-            this.Zero_B.Location = new System.Drawing.Point(95, 190);
+            this.Zero_B.Location = new System.Drawing.Point(13, 220);
             this.Zero_B.Name = "Zero_B";
             this.Zero_B.Size = new System.Drawing.Size(75, 23);
             this.Zero_B.TabIndex = 12;
-            this.Zero_B.Text = "button7";
+            this.Zero_B.Text = "0";
             this.Zero_B.UseVisualStyleBackColor = true;
             this.Zero_B.Click += new System.EventHandler(this.Zero_B_Click);
             // 
@@ -204,11 +205,21 @@
             this.DivisionButton.UseVisualStyleBackColor = true;
             this.DivisionButton.Click += new System.EventHandler(this.DivisionButton_Click);
             // 
+            // button_dot
+            // 
+            this.button_dot.Location = new System.Drawing.Point(95, 219);
+            this.button_dot.Name = "button_dot";
+            this.button_dot.Size = new System.Drawing.Size(75, 23);
+            this.button_dot.TabIndex = 16;
+            this.button_dot.Text = ".";
+            this.button_dot.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 278);
+            this.Controls.Add(this.button_dot);
             this.Controls.Add(this.DivisionButton);
             this.Controls.Add(this.MultiplicationButton);
             this.Controls.Add(this.MinusButton);
@@ -249,6 +260,7 @@
         private System.Windows.Forms.Button MinusButton;
         private System.Windows.Forms.Button MultiplicationButton;
         private System.Windows.Forms.Button DivisionButton;
+        private System.Windows.Forms.Button button_dot;
     }
 }
 
