@@ -12,9 +12,10 @@ namespace WindowsFormsApplication4
 {
     public partial class Form1 : Form
     {
-        public bool MinusFlag = false;
-        public bool PlusFlag = false;
-        public bool equally = false;
+        public float FirstCount;
+        public int Operations;
+        public bool PositiveOrNegativeNumber = true;
+        public float SecondCount;
         public int Result = 0;
         public string Interface;
         const int One = 1;
@@ -28,11 +29,40 @@ namespace WindowsFormsApplication4
         const int Nine = 9;
         const int Zero = 0;
         chars Char = new chars();
+
+
         public Form1()
         {
             InitializeComponent();
         }
-        List<string> OperationsList = new List<string>();
+
+        public void calculate()
+        {
+            int count = 1;        
+            switch (count)
+            {
+                case 1:
+                    SecondCount = FirstCount + float.Parse(result.Text);
+                    result.Text = SecondCount.ToString();
+                    break;
+                case 2:
+                    SecondCount = FirstCount - float.Parse(result.Text);
+                    result.Text = SecondCount.ToString();
+                    break;
+                case 3: 
+                    SecondCount = FirstCount * float.Parse(result.Text);
+                    result.Text = SecondCount.ToString();
+                    break;
+                case 4:
+                    SecondCount = FirstCount / float.Parse(result.Text);
+                    result.Text = SecondCount.ToString();
+                    break;
+                default:
+                    break;
+            }
+
+
+        }
         public void Operation(bool plusFlag, int number)
         {
             if (Result == 0)
@@ -54,27 +84,10 @@ namespace WindowsFormsApplication4
             }
             
         }
-
-
-        
-
-        private void Plus_Click(object sender, EventArgs e)
-        {
-
-            result.Text += " + ";
-            OperationsList.Add("minus");
-
-        }
-
         private void equolly_Click(object sender, EventArgs e)
         {
-            result.Clear();
-            result.Text = Result.ToString();
-            foreach (String oper in OperationsList)
-            {
-
-            }
-            PlusFlag = false;
+            calculate();
+            label1.Text = " ";
             
 
         }
@@ -114,49 +127,101 @@ namespace WindowsFormsApplication4
 
         private void Six_B_Click(object sender, EventArgs e)
         {
-            Operation(PlusFlag, Six);
+            result.Text = result.Text + "6";
+
 
         }
 
         private void Seven_B_Click(object sender, EventArgs e)
         {
-            Operation(PlusFlag, Seven);
+            result.Text = result.Text + "7";
+
 
         }
 
         private void Eight_B_Click(object sender, EventArgs e)
         {
-            Operation(PlusFlag, Eight);
+            result.Text = result.Text + "8";
+
 
         }
 
         private void Nine_B_Click(object sender, EventArgs e)
         {
-            Operation(PlusFlag, Nine);
+            result.Text = result.Text + "9";
+
 
         }
 
         private void Zero_B_Click(object sender, EventArgs e)
         {
-            Operation(PlusFlag, Zero);
+            result.Text = result.Text + "0";
 
+
+        }
+        private void Plus_Click(object sender, EventArgs e)
+        {
+            FirstCount = float.Parse(result.Text);
+            label1.Text += " + ";
+            if (FirstCount < 0)
+            {
+                PositiveOrNegativeNumber = false;
+            }
+            else
+            {
+
+                PositiveOrNegativeNumber = true;
+            }
+            Operations = 1;
         }
 
         private void MinusButton_Click(object sender, EventArgs e)
         {
-            result.Text += " - ";
-            OperationsList.Add("minus");
+            FirstCount = float.Parse(result.Text);
+            label1.Text += " - ";
+            if (FirstCount < 0)
+            {
+                PositiveOrNegativeNumber = false;
+            }
+            else
+            {
+
+                PositiveOrNegativeNumber = true;
+            }
+            Operations = 2;
 
         }
 
         private void MultiplicationButton_Click(object sender, EventArgs e)
         {
+            FirstCount = float.Parse(result.Text);
+            label1.Text += " * ";
+            if (FirstCount < 0)
+            {
+                PositiveOrNegativeNumber = false;
+            }
+            else
+            {
 
+                PositiveOrNegativeNumber = true;
+            }
+            Operations = 3;
         }
 
         private void DivisionButton_Click(object sender, EventArgs e)
         {
+            FirstCount = float.Parse(result.Text);
+            label1.Text += " / ";
+            if (FirstCount < 0)
+            {
+                PositiveOrNegativeNumber = false;
+            }
+            else
+            {
 
+                PositiveOrNegativeNumber = true;
+            }
+            Operations = 4;
         }
     }
 }

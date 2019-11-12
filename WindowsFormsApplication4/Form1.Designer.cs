@@ -45,6 +45,7 @@
             this.MultiplicationButton = new System.Windows.Forms.Button();
             this.DivisionButton = new System.Windows.Forms.Button();
             this.button_dot = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // result
@@ -214,11 +215,20 @@
             this.button_dot.Text = ".";
             this.button_dot.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(249, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 278);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button_dot);
             this.Controls.Add(this.DivisionButton);
             this.Controls.Add(this.MultiplicationButton);
@@ -239,6 +249,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -261,6 +272,7 @@
         private System.Windows.Forms.Button MultiplicationButton;
         private System.Windows.Forms.Button DivisionButton;
         private System.Windows.Forms.Button button_dot;
+        private System.Windows.Forms.Label label1;
     }
 }
 
