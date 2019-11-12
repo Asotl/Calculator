@@ -46,21 +46,24 @@
             this.DivisionButton = new System.Windows.Forms.Button();
             this.button_dot = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.CButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.PersentButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // result
             // 
             this.result.Location = new System.Drawing.Point(13, 13);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(259, 51);
+            this.result.Size = new System.Drawing.Size(246, 51);
             this.result.TabIndex = 0;
             this.result.Text = "";
             // 
             // Plus
             // 
-            this.Plus.Location = new System.Drawing.Point(197, 70);
+            this.Plus.Location = new System.Drawing.Point(202, 117);
             this.Plus.Name = "Plus";
-            this.Plus.Size = new System.Drawing.Size(75, 23);
+            this.Plus.Size = new System.Drawing.Size(57, 40);
             this.Plus.TabIndex = 1;
             this.Plus.Text = "+";
             this.Plus.UseVisualStyleBackColor = true;
@@ -68,9 +71,9 @@
             // 
             // equolly
             // 
-            this.equolly.Location = new System.Drawing.Point(196, 100);
+            this.equolly.Location = new System.Drawing.Point(202, 255);
             this.equolly.Name = "equolly";
-            this.equolly.Size = new System.Drawing.Size(75, 23);
+            this.equolly.Size = new System.Drawing.Size(57, 40);
             this.equolly.TabIndex = 2;
             this.equolly.Text = "=";
             this.equolly.UseVisualStyleBackColor = true;
@@ -78,9 +81,9 @@
             // 
             // One_B
             // 
-            this.One_B.Location = new System.Drawing.Point(13, 71);
+            this.One_B.Location = new System.Drawing.Point(13, 209);
             this.One_B.Name = "One_B";
-            this.One_B.Size = new System.Drawing.Size(75, 23);
+            this.One_B.Size = new System.Drawing.Size(57, 40);
             this.One_B.TabIndex = 3;
             this.One_B.Text = "1";
             this.One_B.UseVisualStyleBackColor = true;
@@ -88,9 +91,9 @@
             // 
             // Two_B
             // 
-            this.Two_B.Location = new System.Drawing.Point(13, 101);
+            this.Two_B.Location = new System.Drawing.Point(76, 209);
             this.Two_B.Name = "Two_B";
-            this.Two_B.Size = new System.Drawing.Size(75, 23);
+            this.Two_B.Size = new System.Drawing.Size(57, 40);
             this.Two_B.TabIndex = 4;
             this.Two_B.Text = "2";
             this.Two_B.UseVisualStyleBackColor = true;
@@ -98,9 +101,9 @@
             // 
             // Three_B
             // 
-            this.Three_B.Location = new System.Drawing.Point(13, 131);
+            this.Three_B.Location = new System.Drawing.Point(139, 209);
             this.Three_B.Name = "Three_B";
-            this.Three_B.Size = new System.Drawing.Size(75, 23);
+            this.Three_B.Size = new System.Drawing.Size(57, 40);
             this.Three_B.TabIndex = 5;
             this.Three_B.Text = "3";
             this.Three_B.UseVisualStyleBackColor = true;
@@ -108,9 +111,9 @@
             // 
             // Four_B
             // 
-            this.Four_B.Location = new System.Drawing.Point(12, 162);
+            this.Four_B.Location = new System.Drawing.Point(13, 163);
             this.Four_B.Name = "Four_B";
-            this.Four_B.Size = new System.Drawing.Size(75, 23);
+            this.Four_B.Size = new System.Drawing.Size(57, 40);
             this.Four_B.TabIndex = 6;
             this.Four_B.Text = "4";
             this.Four_B.UseVisualStyleBackColor = true;
@@ -118,9 +121,9 @@
             // 
             // Five_B
             // 
-            this.Five_B.Location = new System.Drawing.Point(13, 191);
+            this.Five_B.Location = new System.Drawing.Point(76, 163);
             this.Five_B.Name = "Five_B";
-            this.Five_B.Size = new System.Drawing.Size(75, 23);
+            this.Five_B.Size = new System.Drawing.Size(57, 40);
             this.Five_B.TabIndex = 7;
             this.Five_B.Text = "5";
             this.Five_B.UseVisualStyleBackColor = true;
@@ -128,9 +131,9 @@
             // 
             // Six_B
             // 
-            this.Six_B.Location = new System.Drawing.Point(95, 70);
+            this.Six_B.Location = new System.Drawing.Point(139, 163);
             this.Six_B.Name = "Six_B";
-            this.Six_B.Size = new System.Drawing.Size(75, 23);
+            this.Six_B.Size = new System.Drawing.Size(57, 40);
             this.Six_B.TabIndex = 8;
             this.Six_B.Text = "6";
             this.Six_B.UseVisualStyleBackColor = true;
@@ -138,9 +141,9 @@
             // 
             // Seven_B
             // 
-            this.Seven_B.Location = new System.Drawing.Point(95, 100);
+            this.Seven_B.Location = new System.Drawing.Point(12, 117);
             this.Seven_B.Name = "Seven_B";
-            this.Seven_B.Size = new System.Drawing.Size(75, 23);
+            this.Seven_B.Size = new System.Drawing.Size(57, 40);
             this.Seven_B.TabIndex = 9;
             this.Seven_B.Text = "7";
             this.Seven_B.UseVisualStyleBackColor = true;
@@ -148,9 +151,9 @@
             // 
             // Eight_B
             // 
-            this.Eight_B.Location = new System.Drawing.Point(95, 130);
+            this.Eight_B.Location = new System.Drawing.Point(76, 117);
             this.Eight_B.Name = "Eight_B";
-            this.Eight_B.Size = new System.Drawing.Size(75, 23);
+            this.Eight_B.Size = new System.Drawing.Size(57, 40);
             this.Eight_B.TabIndex = 10;
             this.Eight_B.Text = "8";
             this.Eight_B.UseVisualStyleBackColor = true;
@@ -158,9 +161,9 @@
             // 
             // Nine_B
             // 
-            this.Nine_B.Location = new System.Drawing.Point(95, 160);
+            this.Nine_B.Location = new System.Drawing.Point(139, 117);
             this.Nine_B.Name = "Nine_B";
-            this.Nine_B.Size = new System.Drawing.Size(75, 23);
+            this.Nine_B.Size = new System.Drawing.Size(57, 40);
             this.Nine_B.TabIndex = 11;
             this.Nine_B.Text = "9";
             this.Nine_B.UseVisualStyleBackColor = true;
@@ -168,9 +171,9 @@
             // 
             // Zero_B
             // 
-            this.Zero_B.Location = new System.Drawing.Point(13, 220);
+            this.Zero_B.Location = new System.Drawing.Point(12, 255);
             this.Zero_B.Name = "Zero_B";
-            this.Zero_B.Size = new System.Drawing.Size(75, 23);
+            this.Zero_B.Size = new System.Drawing.Size(121, 40);
             this.Zero_B.TabIndex = 12;
             this.Zero_B.Text = "0";
             this.Zero_B.UseVisualStyleBackColor = true;
@@ -178,9 +181,9 @@
             // 
             // MinusButton
             // 
-            this.MinusButton.Location = new System.Drawing.Point(196, 130);
+            this.MinusButton.Location = new System.Drawing.Point(202, 209);
             this.MinusButton.Name = "MinusButton";
-            this.MinusButton.Size = new System.Drawing.Size(75, 23);
+            this.MinusButton.Size = new System.Drawing.Size(57, 40);
             this.MinusButton.TabIndex = 13;
             this.MinusButton.Text = "-";
             this.MinusButton.UseVisualStyleBackColor = true;
@@ -188,9 +191,9 @@
             // 
             // MultiplicationButton
             // 
-            this.MultiplicationButton.Location = new System.Drawing.Point(196, 160);
+            this.MultiplicationButton.Location = new System.Drawing.Point(202, 71);
             this.MultiplicationButton.Name = "MultiplicationButton";
-            this.MultiplicationButton.Size = new System.Drawing.Size(75, 23);
+            this.MultiplicationButton.Size = new System.Drawing.Size(57, 40);
             this.MultiplicationButton.TabIndex = 14;
             this.MultiplicationButton.Text = "*";
             this.MultiplicationButton.UseVisualStyleBackColor = true;
@@ -198,9 +201,9 @@
             // 
             // DivisionButton
             // 
-            this.DivisionButton.Location = new System.Drawing.Point(197, 190);
+            this.DivisionButton.Location = new System.Drawing.Point(202, 163);
             this.DivisionButton.Name = "DivisionButton";
-            this.DivisionButton.Size = new System.Drawing.Size(75, 23);
+            this.DivisionButton.Size = new System.Drawing.Size(57, 40);
             this.DivisionButton.TabIndex = 15;
             this.DivisionButton.Text = "/";
             this.DivisionButton.UseVisualStyleBackColor = true;
@@ -208,12 +211,13 @@
             // 
             // button_dot
             // 
-            this.button_dot.Location = new System.Drawing.Point(95, 219);
+            this.button_dot.Location = new System.Drawing.Point(139, 255);
             this.button_dot.Name = "button_dot";
-            this.button_dot.Size = new System.Drawing.Size(75, 23);
+            this.button_dot.Size = new System.Drawing.Size(57, 40);
             this.button_dot.TabIndex = 16;
             this.button_dot.Text = ".";
             this.button_dot.UseVisualStyleBackColor = true;
+            this.button_dot.Click += new System.EventHandler(this.button_dot_Click);
             // 
             // label1
             // 
@@ -223,11 +227,44 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 17;
             // 
+            // CButton
+            // 
+            this.CButton.Location = new System.Drawing.Point(13, 70);
+            this.CButton.Name = "CButton";
+            this.CButton.Size = new System.Drawing.Size(57, 40);
+            this.CButton.TabIndex = 18;
+            this.CButton.Text = "C";
+            this.CButton.UseVisualStyleBackColor = true;
+            this.CButton.Click += new System.EventHandler(this.CButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(76, 70);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 40);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "+/-";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // PersentButton
+            // 
+            this.PersentButton.Location = new System.Drawing.Point(140, 71);
+            this.PersentButton.Name = "PersentButton";
+            this.PersentButton.Size = new System.Drawing.Size(56, 39);
+            this.PersentButton.TabIndex = 20;
+            this.PersentButton.Text = "%";
+            this.PersentButton.UseVisualStyleBackColor = true;
+            //this.PersentButton.Click += new System.EventHandler(this.PersentButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 278);
+            this.ClientSize = new System.Drawing.Size(269, 335);
+            this.Controls.Add(this.PersentButton);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_dot);
             this.Controls.Add(this.DivisionButton);
@@ -273,6 +310,9 @@
         private System.Windows.Forms.Button DivisionButton;
         private System.Windows.Forms.Button button_dot;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button CButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button PersentButton;
     }
 }
 

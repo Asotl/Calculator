@@ -18,18 +18,6 @@ namespace WindowsFormsApplication4
         public float SecondCount;
         public int Result = 0;
         public string Interface;
-        const int One = 1;
-        const int Two = 2;
-        const int Three = 3;
-        const int Four = 4;
-        const int Five = 5;
-        const int Six = 6;
-        const int Seven = 7;
-        const int Eight = 8;
-        const int Nine = 9;
-        const int Zero = 0;
-        chars Char = new chars();
-
 
         public Form1()
         {
@@ -45,6 +33,8 @@ namespace WindowsFormsApplication4
                     SecondCount = FirstCount + float.Parse(result.Text);
                     result.Text = SecondCount.ToString();
                     break;
+                   
+                    
                 case 2:
                     SecondCount = FirstCount - float.Parse(result.Text);
                     result.Text = SecondCount.ToString();
@@ -57,33 +47,18 @@ namespace WindowsFormsApplication4
                     SecondCount = FirstCount / float.Parse(result.Text);
                     result.Text = SecondCount.ToString();
                     break;
+                //case 5:
+                //    SecondCount = (float.Parse(result.Text) / 100) * FirstCount;
+                //    result.Text = SecondCount.ToString();
+                //    break;
                 default:
                     break;
             }
 
 
         }
-        public void Operation(bool plusFlag, int number)
-        {
-            if (Result == 0)
-            {
-
-                // Работа с чслом и сложение
-                result.Text += One.ToString();
-                Result = One;
-            }
-            //else
-            //{
-            //    result.Clear();
-            //}
-            if (plusFlag)
-            {
-                Result += number;
-                result.Text += number.ToString();
-                
-            }
-            
-        }
+        
+        
         private void equolly_Click(object sender, EventArgs e)
         {
             calculate();
@@ -121,44 +96,50 @@ namespace WindowsFormsApplication4
         private void Five_B_Click(object sender, EventArgs e)
         {
             result.Text = result.Text + "5";
-
-
         }
 
         private void Six_B_Click(object sender, EventArgs e)
         {
             result.Text = result.Text + "6";
-
-
         }
 
         private void Seven_B_Click(object sender, EventArgs e)
         {
             result.Text = result.Text + "7";
-
-
         }
 
         private void Eight_B_Click(object sender, EventArgs e)
         {
             result.Text = result.Text + "8";
-
-
         }
 
         private void Nine_B_Click(object sender, EventArgs e)
         {
             result.Text = result.Text + "9";
-
-
         }
 
         private void Zero_B_Click(object sender, EventArgs e)
         {
             result.Text = result.Text + "0";
 
-
         }
+        //private void PersentButton_Click(object sender, EventArgs e)
+        //{
+        //    Operations = 1;
+        //    FirstCount = float.Parse(result.Text);
+        //    label1.Text += " % ";
+        //    if (FirstCount < 0)
+        //    {
+        //        PositiveOrNegativeNumber = false;
+        //    }
+        //    else
+        //    {
+
+        //        PositiveOrNegativeNumber = true;
+        //    }
+
+        //    result.Text = "";
+        //}
         private void Plus_Click(object sender, EventArgs e)
         {
             FirstCount = float.Parse(result.Text);
@@ -173,6 +154,7 @@ namespace WindowsFormsApplication4
                 PositiveOrNegativeNumber = true;
             }
             Operations = 1;
+            result.Text = "";
         }
 
         private void MinusButton_Click(object sender, EventArgs e)
@@ -189,7 +171,7 @@ namespace WindowsFormsApplication4
                 PositiveOrNegativeNumber = true;
             }
             Operations = 2;
-
+            result.Text = "";
         }
 
         private void MultiplicationButton_Click(object sender, EventArgs e)
@@ -206,6 +188,7 @@ namespace WindowsFormsApplication4
                 PositiveOrNegativeNumber = true;
             }
             Operations = 3;
+            result.Text = "";
         }
 
         private void DivisionButton_Click(object sender, EventArgs e)
@@ -222,6 +205,23 @@ namespace WindowsFormsApplication4
                 PositiveOrNegativeNumber = true;
             }
             Operations = 4;
+            result.Text = "";
         }
+
+        private void CButton_Click(object sender, EventArgs e)
+        {
+            result.Text = "";
+
+        }
+
+        private void button_dot_Click(object sender, EventArgs e)
+        {
+            result.Text = result.Text + ",";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            result.Text = "-" + result.Text;
+        }   
     }
 }
