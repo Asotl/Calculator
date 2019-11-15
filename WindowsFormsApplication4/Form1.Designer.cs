@@ -255,7 +255,7 @@
             this.PersentButton.TabIndex = 20;
             this.PersentButton.Text = "%";
             this.PersentButton.UseVisualStyleBackColor = true;
-            //this.PersentButton.Click += new System.EventHandler(this.PersentButton_Click);
+            this.PersentButton.Click += new System.EventHandler(this.PersentButton_Click_1);
             // 
             // Form1
             // 

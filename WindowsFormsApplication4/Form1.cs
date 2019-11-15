@@ -18,6 +18,7 @@ namespace WindowsFormsApplication4
         public float SecondCount;
         public int Result = 0;
         public string Interface;
+        
 
         public Form1()
         {
@@ -26,15 +27,14 @@ namespace WindowsFormsApplication4
 
         public void calculate()
         {
-            int count = 1;        
-            switch (count)
+
+            switch (Operations)
             {
                 case 1:
                     SecondCount = FirstCount + float.Parse(result.Text);
                     result.Text = SecondCount.ToString();
                     break;
-                   
-                    
+                 
                 case 2:
                     SecondCount = FirstCount - float.Parse(result.Text);
                     result.Text = SecondCount.ToString();
@@ -47,10 +47,10 @@ namespace WindowsFormsApplication4
                     SecondCount = FirstCount / float.Parse(result.Text);
                     result.Text = SecondCount.ToString();
                     break;
-                //case 5:
-                //    SecondCount = (float.Parse(result.Text) / 100) * FirstCount;
-                //    result.Text = SecondCount.ToString();
-                //    break;
+                case 5:
+                    SecondCount = (float.Parse(result.Text) / 100) * FirstCount;
+                    result.Text = SecondCount.ToString();
+                    break;
                 default:
                     break;
             }
@@ -123,23 +123,7 @@ namespace WindowsFormsApplication4
             result.Text = result.Text + "0";
 
         }
-        //private void PersentButton_Click(object sender, EventArgs e)
-        //{
-        //    Operations = 1;
-        //    FirstCount = float.Parse(result.Text);
-        //    label1.Text += " % ";
-        //    if (FirstCount < 0)
-        //    {
-        //        PositiveOrNegativeNumber = false;
-        //    }
-        //    else
-        //    {
-
-        //        PositiveOrNegativeNumber = true;
-        //    }
-
-        //    result.Text = "";
-        //}
+        
         private void Plus_Click(object sender, EventArgs e)
         {
             FirstCount = float.Parse(result.Text);
@@ -210,6 +194,13 @@ namespace WindowsFormsApplication4
 
         private void CButton_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrWhiteSpace(result.Text))
+            {
+                label1.Text = "";
+                FirstCount = 0;
+
+            }
+
             result.Text = "";
 
         }
@@ -222,6 +213,26 @@ namespace WindowsFormsApplication4
         private void button1_Click(object sender, EventArgs e)
         {
             result.Text = "-" + result.Text;
+        }
+
+        private void PersentButton_Click_1(object sender, EventArgs e)
+        {
+
+            Operations = 5;
+            FirstCount = float.Parse(result.Text);
+            label1.Text += " % ";
+            if (FirstCount < 0)
+            {
+                PositiveOrNegativeNumber = false;
+            }
+            else
+            {
+
+                PositiveOrNegativeNumber = true;
+            }
+
+            result.Text = "";
+
         }   
     }
 }
